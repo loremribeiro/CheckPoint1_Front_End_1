@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: black;
+  padding: 20px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo:hover {
+  background-color: rgba(245, 238, 238, 0.548);
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  font-size: 20px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+  border: 2px;
+}
+
+ul :hover {
+  background-color: rgba(245, 238, 238, 0.548);
+}
+
+.banner {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: auto;
+  height: 582px;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Paragrafo_Sampa {
+  font-family: "Roboto";
+  font-size: 25px;
+  font-display: center;
+  text-align: center;
+  color: black;
+  line-height: 40px;
+  padding: 180px;
+}
+
+.container-img {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+h3 {
+  color: black;
+  margin: 10px 0 0 10px;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.item-img {
+  padding: 30px;
+  width: 300px;
+  height: 534px;
+  border-radius: 31%;
+}
+
+.container-video {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.contato {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  font-size: 60px;
+}
+
+.fa-brands:hover {
+  background-color: rgba(245, 238, 238, 0.548);
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    background-color: white;
+  }
+
+  ul {
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Paragrafo_Sampa {
+    color: white;
+    font-size: 16px;
+    padding: 60px;
+  }
+
+  .item-img {
+    width: 80%;
+    align-items: center;
+  }
+
+  .container-video {
+    display: flex;
+    margin: 0%;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}
